@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage design</title>
+    <link rel="stylesheet" href="firstweb.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Momo+Signature&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Yuji+Boku&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+  <!--------------------header------------------------------------------------------------------>  
+
+    <section class="sub-header">
+      <nav>
+
+        <div class="icon">
+          <h2 class="logo">SHI-VC</h2>
+        </div>
+
+        <div class="menu" id="Menu">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+
+      </nav>
+      <h1>Contact Us</h1>
+    </section>
+
+    <!-------------------------contact us-------------------------------------------------------------->
+
+    <section class="location">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.8119628264676!2d34.76519467508785!3d-0.10228333547834385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182aa49b91b651ab%3A0x34b5285931f33415!2sKisumu%20Day%20Tennis%20Court!5e0!3m2!1sen!2ske!4v1768053458577!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+
+          <div>
+            <i class="fa-solid fa-house"></i>
+            <span>
+              <h5>Kisumu Day Hockey Grounds</h5>
+              <p>Ondiek Highway, Kisumu</p>
+            </span>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-mobile"></i>
+            <span>
+              <h5>+254 712 345 678</h5>
+              <p>Monday to Friday, 3pm to 6:30pm</p>
+            </span>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-envelope"></i>
+            <span>
+              <h5>myemail@gmail.com</h5>
+              <p>Email me your Query</p>
+            </span>
+          </div>
+
+        </div>
+        <div class="contact-col">
+
+          <form action="form-handler.php" method="post">
+
+            <!----------check later for correction-->
+            <input type="text" name="name" placeholder="Enter your name" required>
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <input type="text" name="subject" placeholder="Enter your subject" required>
+            <textarea  rows="8" name="message" placeholder="Message" required></textarea>
+            <!----------------------------------------->
+
+            <button type="submit" class="hero-btn"><a href="" class="herob">Send Message</a></button>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+
+   
+    <!--------------------------------footer----------------------------------------------------------->
+    
+    <section class="footer">
+      <h4>Contact Us</h4>
+      <p>i will write a paragraph later</p>
+      <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+      </div>
+      <p>Made by 
+        <i class="fa-solid fa-g"></i>
+        <i class="fa-solid fa-e"></i>
+        <i class="fa-solid fa-o"></i>
+        <i class="fa-solid fa-f"></i>
+        <i class="fa-solid fa-r"></i>
+        <i class="fa-solid fa-y"></i>
+      </p>
+    </section>
+
+
+    <!------Javascript for Toggle Menu------------------------------------------------------------------------->
+    <script>
+
+        var Menu = document.getElementById("Menu")
+
+        function showMenu(){
+          Menu.style.right = "0";
+        }
+         function hideMenu(){
+          Menu.style.right = "-200px";
+        }
+
+    </script>
+
+  </body>
+
+</html>

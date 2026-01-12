@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage design</title>
+    <link rel="stylesheet" href="firstweb.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Momo+Signature&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Yuji+Boku&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+  <!--------------------header------------------------------------------------------------------>  
+
+    <section class="sub-header">
+      <nav>
+
+        <div class="icon">
+          <h2 class="logo">SHI-VC</h2>
+        </div>
+
+        <div class="menu" id="Menu">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+
+      </nav>
+      <h1>About Us</h1>
+    </section>
+
+    <!--------------------------About us comments-------------------------------------------->
+
+    <section class="about-us">
+      <div class="row">
+        <div class="about-col">
+          <h1>We have the best Team in Kisumu</h1>
+          <p>I am a passionate coach focused on growth, discipline, and results—helping people become the best version of themselves.<br>I lead by example, coach with purpose, and build with vision. My coaching style blends discipline, encouragement,<br> and accountability to drive consistent improvement and real results.</p>
+          <button class="hero-btn"><a href="contact.html" class="herob">CONTACT US</a></button>
+        </div>
+        <div class="about-col">
+          <img src="pics/pic3.jpeg">
+        </div>
+      </div>
+    </section>
+
+
+    <!--------------------------------footer----------------------------------------------------------->
+    
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>i will write a paragraph later</p>
+      <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+      </div>
+      <p>Made by 
+        <i class="fa-solid fa-g"></i>
+        <i class="fa-solid fa-e"></i>
+        <i class="fa-solid fa-o"></i>
+        <i class="fa-solid fa-f"></i>
+        <i class="fa-solid fa-r"></i>
+        <i class="fa-solid fa-y"></i>
+      </p>
+    </section>
+
+
+    <!------Javascript for Toggle Menu------------------------------------------------------------------------->
+    <script>
+
+        var Menu = document.getElementById("Menu")
+
+        function showMenu(){
+          Menu.style.right = "0";
+        }
+         function hideMenu(){
+          Menu.style.right = "-200px";
+        }
+
+    </script>
+
+  </body>
+
+</html>
